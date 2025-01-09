@@ -11,7 +11,7 @@ class my_driver extends uvm_driver#(my_transaction);
 
   virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
-    if(uvm_config_db#(virtual spram_if)::get(this,"","vif")) begin
+    if(!uvm_config_db#(virtual spram_if)::get(this,"","vif")) begin
       `uvm_fatal(get_type_name(),"VIF is not set")
     end
   endfunction
