@@ -19,7 +19,7 @@ class my_scoreboard extends uvm_scoreboard;
   function void connect_phase(uvm_phase phase);
     super.connect_phase(phase);
     axp_in.connect(prd.analysis_export);
-    axp_in.connect(cmo.axp_out);
+    axp_in.connect(cmp.axp_out);
     prd.results_ap.connect(cmp.axp_in);
   endfunction
 endclass
