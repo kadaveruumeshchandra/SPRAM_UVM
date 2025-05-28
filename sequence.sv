@@ -1,4 +1,4 @@
-class my_sequence extends uvm_sequence_item#(my_transaction);
+class my_sequence extends uvm_sequence#(my_transaction);
   `uvm_object_utils(my_transaction)
 
   function new(string name="my_sequence");
