@@ -1,6 +1,6 @@
 `define DRV_IF vif.drv_mod.DRV
 class my_driver extends uvm_driver#(my_transaction);
-  `uvm_component_utils(my_sequencer)
+  `uvm_component_utils(my_driver)
 
   virtual spram_if vif;
   my_transaction req;
