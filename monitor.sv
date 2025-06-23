@@ -1,4 +1,4 @@
-`deine MON_IF vif.mon_mod.MON
+`define MON_IF vif.mon_mod.MON
 class my_monitor extends uvm_monitor;
   `uvm_component_utils(my_monitor)
 
